@@ -1,15 +1,19 @@
 #include <stdio.h>
-int main() 
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
 {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
-    char ch,s[30],sen[100];
-    scanf("%c",&ch);
-    scanf("%s",s);
-    getchar();
-    scanf("%[^\n]%*c", sen);
-    printf("%c\n" , ch );
-    printf("%s" , s );
-    printf("\n");
-    printf("%s" , sen );    
+    int a,b,sf,sd;
+    float x,y,di,df;
+    scanf("%d %d",&a,&b);
+    scanf("%f %f",&x,&y);
+    sd=a+b;
+    sf=x+y;
+    di=a-b;
+    df=x-y;
+    printf("%d %d\n",sd,sf);
+    printf("%.1f %.1f",di,df);
     return 0;
 }
